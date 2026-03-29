@@ -42,3 +42,8 @@ const  isPrimeNum = (num)=>{
 }
 
 console.log(isPrimeNum(10))
+
+
+
+
+
