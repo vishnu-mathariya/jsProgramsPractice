@@ -10,7 +10,7 @@ const reverseStr = (inputStr) => {
 
 reverseStr("vishnu");
 
-
+///////////////////////////////////////////////////
 
 const reverseStr2 = (inpStr) => {
   let str2 = "";
@@ -22,7 +22,7 @@ const reverseStr2 = (inpStr) => {
 
 reverseStr2("Jassi");
 
-
+/////////////////////////////////////////////////////////
 
 const reverseStr3 = (inpStr3) =>{
     console.log(inpStr3.split("").reverse().join(""));
@@ -31,3 +31,4 @@ const reverseStr3 = (inpStr3) =>{
 }
 
 reverseStr3("Kunj")
+
