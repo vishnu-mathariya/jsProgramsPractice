@@ -24,11 +24,21 @@ reverseStr2("Jassi");
 
 /////////////////////////////////////////////////////////
 
-const reverseStr3 = (inpStr3) =>{
-    console.log(inpStr3.split("").reverse().join(""));
-    
+const reverseStr3 = (inpStr3) => {
+  console.log(inpStr3.split("").reverse().join(""));
+};
 
-}
+reverseStr3("Kunj");
 
-reverseStr3("Kunj")
+// =================================
 
+const isPalidrome = (iStr) => {
+  for (let i = 0; i <= iStr.length - 1 / 2; i++) {
+    if (iStr[i] !== iStr[iStr.length - 1 - i]) {
+      return false;
+    }
+  }
+  return true;
+};
+
+console.log(isPalidrome("madam"));
