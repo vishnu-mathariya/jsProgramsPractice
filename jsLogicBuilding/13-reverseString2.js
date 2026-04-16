@@ -94,3 +94,22 @@ const checkPalidrome = () => {
 }
 
 console.log(checkPalidrome());
+
+
+
+//////////////////////////////////////
+
+
+const reverseStr = (inpStr) =>{
+  let str =""
+  for(let i= inpStr.length-1; i >=0 ;i--){
+    str += inpStr[i]
+    
+  }
+
+  return str
+
+}
+
+console.log(reverseStr("vishnu"));
+
