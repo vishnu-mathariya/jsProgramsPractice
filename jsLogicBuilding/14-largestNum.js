@@ -41,3 +41,23 @@ const findMaxNum =(inputArr) =>{
 }
 
 findMaxNum([10,20,30])
+
+
+////////////////////////////////////
+
+
+const findMaxNum2 = (inpArr) =>{
+    let maxNum = inpArr[0]
+
+    for(let i=1; i <  inpArr.length; i++){
+        if( inpArr[i] > maxNum){
+            maxNum = inpArr[i]
+
+        }
+    }
+    return maxNum
+
+}
+
+console.log(findMaxNum2([1,200,30]));
+
