@@ -47,45 +47,74 @@ const findMissingNum1 = () => {
 
 console.log(findMissingNum1());
 
-
 ///////////////////////////////////////
 
-let arr3 = [3,1,5,2,4,7,9,6]
+let arr3 = [3, 1, 5, 2, 4, 7, 9, 6];
 
 const findMissNum = () => {
-    let n = arr3.length+1
-    let expSum = (n*(n+1))/2
-    let actSum = 0
+  let n = arr3.length + 1;
+  let expSum = (n * (n + 1)) / 2;
+  let actSum = 0;
 
-    for(let i=0; i < arr3.length; i++){
-        actSum += arr3[i]
-    }
+  for (let i = 0; i < arr3.length; i++) {
+    actSum += arr3[i];
+  }
 
-    return  expSum - actSum
-}
+  return expSum - actSum;
+};
 
 console.log(findMissNum());
 
-
 ///////////////////////////////////////
 
+const findMissNum5 = (inpArr) => {
+  let n = inpArr.length + 1;
 
+  let expSum = (n * (n + 1)) / 2;
 
+  let actSum = 0;
 
-const findMissNum5 = (inpArr) =>{
+  for (let i = 0; i < inpArr.length; i++) {
+    actSum += inpArr[i];
+  }
 
-    let n = inpArr.length+1
+  return expSum - actSum;
+};
 
-    let expSum = (n*(n+1))/2
+console.log(findMissNum5([1, 2, 3, 4, 5]));
 
-    let actSum = 0
+///////////////////////////////////////////////
 
-    for(let i=0; i< inpArr.length; i++){
-        actSum += inpArr[i]
+// find missing double num
+
+const findDobMissNum = (arr) => {
+  let result = [];
+
+  let max = Math.max(...arr);
+
+  for (let i = 1; i <= max; i++) {
+    if (!arr.includes(i)) {
+      result.push(i);
     }
+  }
 
-    return expSum - actSum  
+  return result;
+};
 
-}
+console.log(findDobMissNum([3, 1, 5, 2, 4, 7, 9]));
 
-console.log(findMissNum5([1,2,3,4,5]));
+//////////////////////////////
+
+const findMissingNum6 = (arr) => {
+  let result = [];
+  let max = Math.max(...arr);
+
+  for (let i = 1; i <= max; i++) {
+    if (!arr.includes(i)) {
+      result.push(i);
+    }
+  }
+  return result;
+};
+
+console.log(findMissingNum6([1, 2, 4, 6, 7, 10]));
