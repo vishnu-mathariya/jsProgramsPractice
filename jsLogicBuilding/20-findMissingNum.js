@@ -65,3 +65,27 @@ const findMissNum = () => {
 }
 
 console.log(findMissNum());
+
+
+///////////////////////////////////////
+
+
+
+
+const findMissNum5 = (inpArr) =>{
+
+    let n = inpArr.length+1
+
+    let expSum = (n*(n+1))/2
+
+    let actSum = 0
+
+    for(let i=0; i< inpArr.length; i++){
+        actSum += inpArr[i]
+    }
+
+    return expSum - actSum  
+
+}
+
+console.log(findMissNum5([1,2,3,4,5]));
