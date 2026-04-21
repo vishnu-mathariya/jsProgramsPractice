@@ -1,9 +1,9 @@
-const calculatePower = (n1,n2) =>{
+const calculatePower = (base,exponent) =>{
 
     let result = 1
 
-    for(let i=0; i < n2; i++){
-        result = result *n1
+    for(let i=1; i <= exponent; i++){
+        result = result *base
     }
     return result;
 
@@ -13,5 +13,3 @@ const calculatePower = (n1,n2) =>{
 console.log(calculatePower(5,4));
 
 
-
-// 2,3----> 2*2*2 ==> 8
