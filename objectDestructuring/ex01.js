@@ -25,3 +25,15 @@ console.log(`Brand : ${brand}`);
 
 
 
+////////////////////////////////////////
+
+
+// Rename variable
+
+const user1 = {
+    name :"Vishnu"
+}
+
+const {name: userName} =user1
+
+console.log(userName);
